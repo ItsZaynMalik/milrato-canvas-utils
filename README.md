@@ -23,6 +23,6 @@ const imageBuffer = await songCardUtil.generate({
 });
 
 // djs:
-const attachment = new AttachmentBuilder(imageBuffer, "milrato-card.png");
+const attachment = new AttachmentBuilder(imageBuffer, { name: ""milrato-card.png" });
 message.reply({ embeds: [new EmbedBuilder().setDescription("info").setImage("attachment://milrato-card.png")], files: [attachment] });
 ```
